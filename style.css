@@ -1,0 +1,215 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(246, 245, 245);
+  }
+  .column
+  {
+      width:15%;
+      float:right;
+      padding-top: 100px;
+     /* padding:100px 10px;*/
+     margin-top: 2px;
+     margin-right: 10px;
+     margin-left: 0;
+     padding: 20px;
+  }
+
+  .row:after{
+      content:"";
+      display:table;
+      clear:both;
+  }
+  header nav {
+    float: left;
+    margin-left: -138px;
+    margin-top: 147px;
+    
+}
+header nav.active
+{
+    display: block;
+    left:0;
+}
+.menu
+{
+    display: none;
+    float: left;
+    position: relative;
+}
+    header .cart
+    {
+        display: none;
+    }
+
+  @media screen and (max-width:500px)
+  {
+      .card
+      {
+          width: 156px;
+      }
+      .column
+      {
+          width:45%;
+          display:block;
+          margin-bottom: 20px;
+          float: right;
+      }
+      header .detail
+      {
+        position: absolute;
+        bottom: -567px;
+        width: 86%;
+        margin-left: 20%;
+      }
+      header .logo
+      {
+          margin-left: 9%;
+      }
+      header nav
+      {
+          display: none;
+          width: 100%;
+          height: calc(100vh - 50px);
+          background: grey;
+          top: 50px;
+          left: 0;
+          transition: 0.5s;
+
+      }
+      header .cart
+      {
+          display:block;
+           float: right;
+           margin-top: 18px;
+      }   
+      header .menu
+      {
+          display: block;
+          margin-top: 18px;
+          margin-left: 10px;
+      }
+      .h4
+      {
+          display: none;
+      }
+      .remove
+      {
+          display: none;
+      }
+  }
+  .card
+  {
+      box-shadow: 0 40px 112px 0 rgba(0,0,0,0.2);
+      max-width:300px;
+      margin:auto;
+      background-color:white;
+      text-align:center;
+      border-radius:40px;
+      padding-bottom:15px;
+  }
+
+  .title
+  {
+      color:gray;
+      font-size:18px;
+  }
+
+  button
+  {
+      border:none;
+      padding:8px;
+      display: inline-block;
+      color:white;
+      background-color:black;
+      cursor:pointer;
+      width:70%;
+      border-radius:20px;
+      font-size:18px;
+      text-align:center;
+  }
+
+  a{
+      text-decoration: none;
+      font-size:22px;
+      color:black;
+  }
+
+  a:hover,button:hover{
+      opacity: 0.6;
+  }
+  body
+{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+
+}
+header .logo
+{
+    padding-top:20px ;
+    color: black;
+    height: 50px;
+    line-height: 50px;
+    font-size: 24px;
+    float: left;   
+    padding-left: 45px;
+}
+header nav
+{
+    float: left;
+    /*padding-top: 60px;
+    padding-left: 45px;
+    padding-left: 0px;*/
+    margin-left: -138px;
+    margin-top: 147px;
+}
+header nav ul{
+    margin: 10px;
+    padding: 10px;
+    display: block;
+}
+
+header nav ul li
+{
+    list-style: none;
+
+}
+header nav ul li a
+{
+    text-decoration: none;
+    height: 70px;
+    line-height: 73px;
+    color: black;
+    display: block;
+    text-align: left;
+}
+header nav ul li a:hover,
+header nav ul li a.active
+{
+    color: #fff;
+    background: #f32191;
+}
+
+header i
+{
+    float: right;
+    /*color: white;*/
+}
+header nav ul li i
+{
+    display: none;
+}
+.buttn {
+    height: 40px;
+    border-radius: 38px;
+    margin-right: 15px;
+    /* padding-top: 14px; */
+    margin-top: 19px;
+    width: 55px;
+    width: 170px;
+    background: #f32191;
+}
